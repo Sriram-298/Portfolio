@@ -1,3 +1,4 @@
+
 name: Deploy to GitHub Pages
 
 on:
@@ -6,6 +7,7 @@ on:
       - main
 
 permissions:
+  contents: read
   pages: write
   id-token: write
 
@@ -14,6 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Debug - list workspace files
+        run: |
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          pwd
+          echo "Top-level files:"
+          ls -la
+          echo "Showing sample file list (depth 3):"
+          find . -maxdepth 3 -type f | sed -n '1,200p'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
