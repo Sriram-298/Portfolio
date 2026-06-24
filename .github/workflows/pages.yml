@@ -12,6 +12,7 @@ permissions:
   id-token: write
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -24,8 +25,10 @@ jobs:
           ls -la
           echo "Showing sample file list (depth 3):"
           find . -maxdepth 3 -type f | sed -n '1,200p'
+      - name: Configure Pages
+        uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./
 
