@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Sriram Saikrishna | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-2xl p-4 px-8 shadow-lg">
+            <span class="text-xl font-bold tracking-tighter">T Sriram Saikrishna</span>
+            <div class="flex gap-6 items-center">
+                <a href="#Languages & Skills" class="hover:text-blue-500 transition">Skills</a>
+                <a href="#Education" class="hover:text-blue-500 transition">Education</a>
+                <a href="#Bio Card" class="hover:text-blue-500 transition">About</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+                <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
+                <button id="theme-toggle" class="p-2 rounded-full bg-slate-200 dark:bg-slate-800 transition">
+                    <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto pt-32 px-6 pb-20">
+        
+        <!-- Hero Section (Bento Style) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Bio Card -->
+            <div class="md:col-span-2 glass p-8 rounded-3xl bento-card flex flex-col justify-center" id = "Bio Card">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-600">T Sriram Saikrishna</span></h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-md">
+                    I am currently studying Computer Science at GITAM University, and I'm passionate about building innovative software solutions.
+                </p>
+                <div class="flex gap-4 mt-8">
+                    <a href="Sriram_Resume_Final.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition">Download CV</a>
+                    <div class="flex gap-3 items-center">
+                        <i data-lucide="github" class="w-6 h-6 cursor-pointer hover:text-blue-500"></i>
+                        <i data-lucide="linkedin" class="w-6 h-6 cursor-pointer hover:text-blue-500"></i>
+                        <i data-lucide="twitter" class="w-6 h-6 cursor-pointer hover:text-blue-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Image Card -->
+            <div class="glass p-4 rounded-3xl bento-card flex items-center justify-center overflow-hidden">
+                <img src="https://imgs.search.brave.com/fLPWmMtsOy4LbeDY0Hgrh2Bfg59rIZUpBd8fHStUqPw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNDI0/MjMuanBn" alt="Profile" class="rounded-2xl object-cover h-full w-full grayscale hover:grayscale-0 transition duration-500">
+            </div>
+
+            <!-- Skills Card -->
+            <div class="glass p-8 rounded-3xl bento-card" id = "Languages & Skills">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="code-2" class="text-blue-500"></i> Languages & Skills
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-lg text-sm">Python</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-lg text-sm">SQL</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-lg text-sm">HTML/CSS</span>
+                </div>
+            </div>
+
+            <!-- Experience Card -->
+            <div class="glass p-8 rounded-3xl bento-card md:col-span-2" id = "Education">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <i data-lucide="briefcase" class="text-blue-500"></i> Education 
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold">GITAM University</h4>
+                            <p class="text-sm text-slate-500">Computer Science</p>
+                        </div>
+                        <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 px-2 py-1 rounded">2025 — 2029</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold">Bangalore International Academy</h4>
+                            <p class="text-sm text-slate-500">11 & 12</p>
+                        </div>
+                        <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 px-2 py-1 rounded">2023 — 2025</span>
+                    </div>
+                     <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold">Presidency School Bangalore South</h4>
+                            <p class="text-sm text-slate-500"></p>
+                        </div>
+                        <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 px-2 py-1 rounded">2013 — 2023</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!-- Projects Section -->
+        <h2 class="text-3xl font-bold mt-20 mb-10" id="projects">Featured Projects</h2>
+        <div class="grid grid-flow-col auto-cols-[minmax(345px,345px)] gap-6 overflow-x-auto overflow-y-hidden pb-4 snap-x snap-mandatory">
+            
+            <!-- Project Card 1 -->
+            <div class="glass overflow-hidden rounded-3xl bento-card group min-w-[345px] snap-start">
+                <div class="grid grid-cols-1 gap-0">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 p-1">
+                        <div class="bg-slate-900 h-full w-full rounded-[20px] overflow-hidden">
+                            <img src="https://imgs.search.brave.com/Yr27uH6LqdNiUKYABsg2CPaSeOQ5MZ9pK-1NF9dln6s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzgy/Mjc0OS9wZXhlbHMt/cGhvdG8tMzgyMjc0/OS5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA" alt="Project 1" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Restaurant Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">A comprehensive solution for managing restaurant operations, including order processing, inventory control, and staff management.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-500 text-sm font-semibold flex items-center gap-1">
+                                View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="glass overflow-hidden rounded-3xl bento-card group min-w-[345px] snap-start">
+                <div class="grid grid-cols-1 gap-0">
+                    <div class="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 p-1">
+                        <div class="bg-slate-900 h-full w-full rounded-[20px] flex items-center justify-center">
+                            <i data-lucide="database" class="w-12 h-12 text-white/20 group-hover:scale-110 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">AI Resume Website</h3>
+                        <p class="text-sm text-slate-500 mb-4">A modern, responsive website for guiding job seekers according to their resumes.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-500 text-sm font-semibold flex items-center gap-1">
+                                View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="glass overflow-hidden rounded-3xl bento-card group min-w-[345px] snap-start">
+                <div class="grid grid-cols-1 gap-0">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 p-1">
+                        <div class="bg-slate-900 h-full w-full rounded-[20px] flex items-center justify-center">
+                            <i data-lucide="smartphone" class="w-12 h-12 text-white/20 group-hover:scale-110 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Fitness Tracker App</h3>
+                        <p class="text-sm text-slate-500 mb-4">Mobile-first React Native application for health monitoring.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-500 text-sm font-semibold flex items-center gap-1">
+                                View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="glass overflow-hidden rounded-3xl bento-card group min-w-[345px] snap-start">
+                <div class="grid grid-cols-1 gap-0">
+                    <div class="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 p-1">
+                        <div class="bg-slate-900 h-full w-full rounded-[20px] flex items-center justify-center">
+                            <i data-lucide="database" class="w-12 h-12 text-white/20 group-hover:scale-110 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">AI Resume Website</h3>
+                        <p class="text-sm text-slate-500 mb-4">A modern, responsive website for guiding job seekers according to their resumes.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-500 text-sm font-semibold flex items-center gap-1">
+                                View Code <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+        <!-- Contact Section -->
+        <section class="glass p-8 rounded-3xl bento-card mt-10" id="contact">
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                <i data-lucide="mail" class="text-blue-500"></i>
+                Contact Me
+            </h2>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-3xl bg-slate-100 dark:bg-slate-900 p-6">
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-2">Email-ID</p>
+                    <a href="mailto:sriram700289@gmail.com" class="font-semibold text-slate-900 dark:text-slate-100 hover:text-blue-600 transition">sriram700289@gmail.com</a>
+                </div>
+                <div class="rounded-3xl bg-slate-100 dark:bg-slate-900 p-6">
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-2">Phone</p>
+                    <a href="tel:+919108347892" class="font-semibold text-slate-900 dark:text-slate-100 hover:text-blue-600 transition">+91 9108347892</a>
+                </div>
+                <div class="rounded-3xl bg-slate-100 dark:bg-slate-900 p-6">
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-2">Location</p>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Visakhapatnam, India</p>
+                </div>
+                <div class="rounded-3xl bg-slate-100 dark:bg-slate-900 p-6">
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-2">Email</p>
+                    <a href="mailto:someone@example.com" class="font-semibold text-slate-900 dark:text-slate-100 hover:text-blue-600 transition">Send email to me</a>
+                </div>
+            </div>
+        </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm">
+        <p>© <span id="year"></span> Your Name. Built with curiosity.</p>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Check for saved user preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

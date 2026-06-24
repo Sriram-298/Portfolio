@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.glass {
+    background: rgba(169, 27, 27, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bento-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects grid: make three cards fit the container width (accounting for two gaps of 1.5rem = 3rem) */
+.projects-grid {
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 3rem) / 3);
+}
+
+.project-card {
+    min-width: calc((100% - 3rem) / 3);
+    max-width: calc((100% - 3rem) / 3);
+}
